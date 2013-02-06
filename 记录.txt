@@ -1,0 +1,35 @@
+1.搭建工程解决方案。		60分钟
+2.比较各种Http client，并最终选择使用libcurl。	120分钟
+3.完成使用libcurl获取联赛数据页面。	60分钟
+4.比较各种html parser，并最终选择使用libxml2。	120分钟
+5.学习libxml2中html parser的使用方法。	240分钟
+6.解析联赛数据页面。	360分钟
+7.编写LeagueParser类。	240分钟
+8.编写StatisticsManager类。	60分钟
+
+2013-01-28
+1.完成统计工资的测试。	120分钟
+
+2013-01-29
+1.完成StatisticsManager中的表头映射。	30分钟
+2.修改StatisticsReport中的map为multimap，并使用统计结果作为key。	20分钟
+3.编写过滤函数。	10分钟
+4.编写统计类。	150分钟
+
+2013-01-30
+1.修改StatisticsRate中的解析错误。	15分钟
+2.修改使用string的operator>排序string digit的错误	30分钟
+
+2013-01-31
+1.编写statistics_league_gui。	60分钟
+2.编写statistics_league_gui。	90分钟
+
+2013-02-01
+1.重构statistics_league_gui，添加业务层类StatisticsLeague。	60分钟
+
+2013-02-04
+1.编写IconvPair类。	60分钟
+
+2013-02-06
+1.重写IconvPair类。	90分钟
+

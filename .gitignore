@@ -1,0 +1,7 @@
+Debug*/
+Release*/
+*.user
+*.suo
+*.sdf
+unit_test/*.txt
+statistics_league_gui/*.txt
