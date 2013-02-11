@@ -44,7 +44,8 @@ bool StatisticsAge::statistics(const club_summaries &summaries,
 		std::ostringstream oss;
 		oss << static_cast<float>(totalAge) / static_cast<float>(
 			(pIter->size() - 2));
-		report.mData.insert(std::make_pair(oss.str(), summary));
+		report.mData.insert(std::make_pair(std::move(oss.str()),
+			std::move(summary)));
 
 		++sIter;
 		++pIter;

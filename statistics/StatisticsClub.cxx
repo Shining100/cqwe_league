@@ -47,10 +47,11 @@ bool StatisticsClub::statistics(const club_summaries &summaries,
 		iter != mCount.end(); ++iter)
 	{
 		StatisticsReport::summary summary;
-		summary.push_back(iter->first);
+		summary.push_back(std::move(iter->first));
 		std::ostringstream oss;
 		oss << iter->second;
-		report.mData.insert(std::make_pair(oss.str(), summary));
+		report.mData.insert(std::make_pair(std::move(oss.str()),
+			std::move(summary)));
 	}
 
 	return true;

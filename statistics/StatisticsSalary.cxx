@@ -43,7 +43,8 @@ bool StatisticsSalary::statistics(const club_summaries &summaries,
 		summary.push_back(stripCoachName((*sIter)[1]));
 		std::ostringstream oss;
 		oss << totalSalary;
-		report.mData.insert(std::make_pair(oss.str(), summary));
+		report.mData.insert(std::make_pair(std::move(oss.str()),
+			std::move(summary)));
 
 		++sIter;
 		++pIter;
